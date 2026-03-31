@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+
+}
+
+.app{
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.messageContainer {
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.messageContainer p{
+  color: red;
+  font-size: 24px;
+}
+
+.board {
+  padding: 0 50px;
+  width: calc(64px * 8);
+  height: calc(64px * 8);
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+}
+
+.cell {
+  width: 64px;
+  height: 64px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cell img {
+  width: 56px;
+  height: 56px;
+  position: relative;
+}
+
+.black {
+ background-color: #779556;
+}
+
+.white {
+  background-color: #EBECD0;
+}
+
+.selected {
+  background-color: #c0be5a!important;
+}
+
+.available {
+  height: 20px;
+  width: 20px;
+  border-radius: 100%;
+  /*background-color: rgba(112, 112, 112, 0.2);*/
+  background-color: green;
+}
+
+.attack {
+  background-color: rgb(228, 72, 72);
+}
+
+.lost {
+  height: calc(50vh - 60px);
+  padding: 30px;
+
+  background-color: lightgray;
+}
+
+
+
+.checked {
+  background-color: rgb(229, 72, 72);
+}
